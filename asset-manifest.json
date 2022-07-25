@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nba-app/static/css/main.df07ac97.css",
+    "main.js": "/nba-app/static/js/main.be9c2bdf.js",
+    "static/js/27.80ec1f0b.chunk.js": "/nba-app/static/js/27.80ec1f0b.chunk.js",
+    "static/media/simple-bg.png": "/nba-app/static/media/simple-bg.410b06241d2c88cdec68.png",
+    "static/media/nba-site.PNG": "/nba-app/static/media/nba-site.8a28e465f8d4d22440c9.PNG",
+    "static/media/basketball2.png": "/nba-app/static/media/basketball2.e1003822b0c40b6899b2.png",
+    "static/media/note-box-bg.jpg": "/nba-app/static/media/note-box-bg.5d81a9f21f8931c76d12.jpg",
+    "static/media/board.png": "/nba-app/static/media/board.bf8e0b2cadf7f995cda3.png",
+    "static/media/ball.png": "/nba-app/static/media/ball.9c745b6f6f4e47f7531a.png",
+    "static/media/git.png": "/nba-app/static/media/git.3d63ad338903e2a55e20.png",
+    "static/media/nba-logo.png": "/nba-app/static/media/nba-logo.1f920e40b1833f3890e0.png",
+    "static/media/team.png": "/nba-app/static/media/team.0b415f1b279b9ff52edb.png",
+    "static/media/basketball2-small.png": "/nba-app/static/media/basketball2-small.4e09180cf2e3a8f8e129.png",
+    "index.html": "/nba-app/index.html",
+    "static/media/handle.svg": "/nba-app/static/media/handle.1c63282b0565bb804ee8495f770e4715.svg",
+    "static/media/cover-side.svg": "/nba-app/static/media/cover-side.795bdd5fed35beef3346.svg"
+  },
+  "entrypoints": [
+    "static/css/main.df07ac97.css",
+    "static/js/main.be9c2bdf.js"
+  ]
+}
