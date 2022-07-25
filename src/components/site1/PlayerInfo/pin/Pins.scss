@@ -1,0 +1,94 @@
+$base-color: red;
+
+.pin-base {
+  z-index: 8;
+  position: absolute;
+}
+
+.pin1 {
+  top: 20px;
+  left: -5px;
+  @media (max-width: 610px) {
+    top: 10px;
+  }
+}
+
+.pin2 {
+  right: 0;
+  top: 50px;
+  @media (max-width: 610px) {
+    top: 40px;
+  }
+  @media (max-width: 385px) {
+    top: 30px;
+  }
+}
+
+.pin-mirror {
+  transform: scaleX(-1);
+}
+
+.needle {
+  position: relative;
+  width: 20px;
+  height: 5px;
+  background: linear-gradient(
+    0deg,
+    rgb(53, 49, 49) 30%,
+    rgb(128, 120, 120) 70%
+  );
+  transform: rotate(45deg);
+  border-right: 1px solid rgb(53, 53, 53);
+  border-spacing: 10px;
+  border-radius: 2px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.507);
+}
+
+.shadow {
+  position: absolute;
+  left: 17px;
+  top: 0px;
+  border-radius: 50%;
+  z-index: 2;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  filter: blur(3px);
+}
+
+.safety-ring {
+  position: absolute;
+  background: linear-gradient(
+    20deg,
+    rgb(121, 21, 21) 40%,
+    rgb(216, 33, 33) 70%
+  );
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  top: -11px;
+  left: -12px;
+  transform: scaleX(0.6);
+}
+
+.handle {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  background: linear-gradient(-20deg, rgb(97, 9, 9), rgb(255, 57, 57));
+  top: -5px;
+  left: -20px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.bottom {
+  position: absolute;
+  top: -5px;
+  left: -28px;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(-20deg, rgb(104, 10, 10), rgb(221, 38, 38) 60%);
+  border-radius: 50%;
+  transform: scaleX(0.6);
+}

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "lib": ["DOM", "DOM.Iterable"],
+    "outDir": "build"
+  },
+  "include": ["declarations.d.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

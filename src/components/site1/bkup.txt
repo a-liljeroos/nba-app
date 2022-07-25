@@ -1,0 +1,52 @@
+onBlur={() => {
+                    setTimeout(() => {
+                      setSuggestion([]);
+                    }, 100);
+                  }}
+
+
+
+
+export function getResource({ resourceId, topicId }) {
+  return topics
+    .find(({ id }) => id === topicId)
+    .resources.find(({ id }) => id === resourceId);
+}
+
+export function getTopic(topicId) {
+  return topics.find(({ id }) => id === topicId);
+}
+
+export function getTopics() {
+  return topics;
+}        
+
+
+
+<Formik
+      initialValues={{
+        firstName: '',
+        lastName: '',
+        email: '',
+      }}
+      onSubmit={async (values) => {
+        await new Promise((r) => setTimeout(r, 500));
+        alert(JSON.stringify(values, null, 2));
+      }}
+    >
+      <Form>
+        <label htmlFor="firstName">First Name</label>
+        <Field id="firstName" name="firstName" placeholder="Jane" />
+
+        <label htmlFor="email">Email</label>
+        <Field
+          id="email"
+          name="email"
+          placeholder="jane@acme.com"
+          type="email"
+        />
+        <button type="submit">Submit</button>
+      </Form>
+    </Formik>
+
+    <Route path=":id" element={<PlayerInfo />} />

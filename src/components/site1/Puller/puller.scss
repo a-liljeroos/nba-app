@@ -1,0 +1,40 @@
+.puller {
+  position: relative;
+
+  height: 20px;
+
+  transform: translateY(-20px);
+
+  width: 95vw;
+
+  background: linear-gradient(
+    0deg,
+    rgb(27, 27, 27) 0 5%,
+    rgb(226, 226, 226) 10% 50%,
+    rgb(88, 88, 88) 70% 95%
+  );
+  box-shadow: 0 3px 10px rgba(15, 15, 15, 0.589);
+  border-radius: 5px;
+  @media (max-width: 1170px) {
+    width: 96vw;
+  }
+  @media (max-width: 840px) {
+    width: 97vw;
+  }
+  @media (max-width: 625px) {
+    width: 98vw;
+  }
+  @media (max-width: 505px) {
+    width: 99vw;
+  }
+  @media (max-width: 505px) {
+    transform: translateY(-20px) translateX(3px);
+  }
+  @media (max-width: 340px) {
+    transform: translateY(-20px) translateX(5px);
+  }
+}
+
+.puller-handle {
+  display: none;
+}

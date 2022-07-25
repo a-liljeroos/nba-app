@@ -1,0 +1,32 @@
+.no-image {
+  width: 250px;
+  height: 25em;
+  background-color: rgba(235, 185, 92, 0.63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  @media (max-width: 960px) {
+    margin: 0 auto;
+    height: 20em;
+  }
+}
+
+.no-image-text {
+  color: #c72842;
+  padding: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  @media (max-width: 808px) {
+    padding-top: 5px;
+  }
+}
+
+.no-image-image {
+  width: 180px;
+  border-radius: 10px;
+  @media (max-width: 808px) {
+    width: 150px;
+  }
+}

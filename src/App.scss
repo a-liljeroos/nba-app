@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// site1 main colors and fonts
+//nav
+$bg-clr-1: #110d01;
+//main
+$bg-clr-2: #525f79;
+$site-1-bg-1: rgb(221, 221, 221);
+//letter s
+$clr-2: #abebfd;
+$font-clr-1: rgb(255, 255, 255);
+$font-family1: "VT323", monospace;
+$font-family2: "Work Sans", sans-serif;
+
+//some individual rule classes
+
+.italic-txt {
+  font-style: italic;
+  color: $clr-2;
+}
+
+//
+
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+.empty-site {
+  display: grid;
+  place-items: center;
+  padding-top: 200px;
+  font-family: $font-family2;
+  font-size: 40px;
+  color: #abebfd;
+}
+
+// init and set specific properties
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+a,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $font-clr-1;
+  font-family: $font-family2;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+// ---
+
+//general styling
+button {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: $font-family2;
+  font-weight: 400;
+  font-size: 1.9em;
+  letter-spacing: -1px;
+  border-width: 0;
+  background-color: $bg-clr-2;
+  color: rgb(15, 15, 15);
+  background-color: aliceblue;
+  margin-inline: 10px;
+  @media (max-width: 960px) {
+    font-size: 1.5em;
+  }
+  @media (max-width: 280px) {
+    font-size: 1em;
+  }
+}
+
+input {
+  font-family: $font-family2;
+  color: rgb(12, 12, 12);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 5px 10px 10px;
+  font-size: 2em;
+  font-weight: 400;
+
+  outline: none;
+  @media (max-width: 960px) {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 280px) {
+    font-size: 1em;
+  }
+}
+
+// ---
+
+nav {
+  background-color: $bg-clr-1;
+  max-height: 8vh;
+  padding-inline: 5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 1100;
+  @media (max-width: 960px) {
+    padding-inline: 2%;
+  }
+  @media (max-width: 450px) {
+    gap: initial;
+  }
+
+  z-index: 2;
+
+  .nav__1 {
+    z-index: 50;
+  }
+
+  .nav__2 {
+    justify-self: flex-end;
+
+    margin-inline: 10px;
+    @media (max-width: 960px) {
+      display: flex;
+    }
+    z-index: 50;
+    @media (max-width: 280px) {
+      display: flex;
+      font-size: 0.6em;
+    }
+  }
+
+  // nav-text
+  .nav-title {
+    font-size: 4em;
+    font-weight: 600;
+    letter-spacing: -2px;
+    @media (max-width: 960px) {
+      font-size: 2.5em;
+    }
+    @media (max-width: 280px) {
+      font-size: 1.8em;
+    }
+  }
+
+  .nav-link {
+    z-index: 2;
+    font-size: 2.5em;
+    font-weight: 300;
+    padding-inline: 20px;
+    margin-inline: 10px;
+    border-radius: 10px;
+    position: relative;
+    max-lines: 1;
+    white-space: nowrap;
+    transition: 500ms;
+    @media (max-width: 960px) {
+      font-size: 1.5em;
+      font-weight: 200;
+      padding-inline: 10px;
+      margin-inline: 5px;
+    }
+  }
+
+  .nav-link:hover {
+    font-size: 2.4em;
+  }
+
+  .nav-link-number {
+    font-size: 0.7em;
+    font-weight: 600;
+    position: absolute;
+  }
+
+  .nav-link-animation:hover {
+    transition: 300ms;
+    animation-name: nav-number-twist;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+}
+
+// nav end
+//-----------
+// main
+
+main {
+  background-color: $bg-clr-1;
+  min-height: 100vh;
+  z-index: 0;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(4, 4, 43) 40%,
+    rgb(26, 26, 26) 100%
+  );
+
+  @media (max-width: 960px) {
+    padding-inline: 0%;
+
+    width: 100vw;
+    min-height: 1000px;
+  }
+}
+
+$bg-gradient-color: #e49835;
+
+.index-page {
+  width: 100%;
+
+  position: relative;
+  padding-bottom: 50px;
+  opacity: 1;
+  background-image: linear-gradient(
+      135deg,
+      $bg-gradient-color 25%,
+      transparent 25%
+    ),
+    linear-gradient(225deg, $bg-gradient-color 25%, transparent 25%),
+    linear-gradient(45deg, $bg-gradient-color 25%, transparent 25%),
+    linear-gradient(315deg, $bg-gradient-color 25%, #d86726 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 10px 10px;
+  background-repeat: repeat;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 960px) {
+  }
+}
+
+// top light source
+.index-page::after {
+  position: fixed;
+  content: "";
+  width: 80vw;
+  min-height: 100%;
+  overflow-y: hidden;
+  transform: translate(calc(-80vw / 2), -20vh);
+  top: 10vh;
+  user-select: none;
+  z-index: -3;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(240, 240, 240, 0.507),
+    rgba(0, 0, 0, 0) 70%
+  );
+  animation: lights-on 2.7s ease;
+}
+
+@keyframes nav-number-twist {
+  0% {
+    color: #09caff;
+  }
+  100% {
+    color: azure;
+  }
+}
+
+@keyframes lights-on {
+  0% {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(240, 240, 240, 0.562),
+      rgba(0, 0, 0, 0) 0%
+    );
+  }
+  90% {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(240, 240, 240, 0.877),
+      rgba(0, 0, 0, 0) 70%
+    );
+  }
+
+  95% {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(240, 240, 240, 0.562),
+      rgba(0, 0, 0, 0) 0%
+    );
+  }
+  100% {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(240, 240, 240, 0.877),
+      rgba(0, 0, 0, 0) 70%
+    );
+  }
+}

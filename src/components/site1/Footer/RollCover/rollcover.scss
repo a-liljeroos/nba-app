@@ -1,0 +1,129 @@
+$border-color: rgb(189, 178, 82);
+
+.cover-mirror {
+  transform: scaleX(-1);
+}
+
+.roll-cover {
+  position: relative;
+}
+.container {
+  position: absolute;
+  bottom: 35px;
+  width: 120px;
+  height: 150px;
+  margin-bottom: -98px;
+  perspective: 1500px;
+
+  perspective-origin: 50% 10%;
+
+  overflow: hidden;
+}
+
+.cube {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  transform-style: preserve-3d;
+  transform: scaleX(1.1) scaleY(1) scaleZ(1.2) rotateX(-1deg) rotateY(86deg)
+    rotateZ(-100deg) translateX(-180px) translateY(30px) translateZ(-20px)
+    skewX(0deg) skewY(0deg);
+  @media (max-width: 1620px) {
+    transform: scaleX(1.1) scaleY(1) scaleZ(1.2) rotateX(-1deg) rotateY(86deg)
+      rotateZ(-100deg) translateX(-180px) translateY(30px) translateZ(-30px)
+      skewX(0deg) skewY(0deg);
+  }
+  @media (max-width: 1340px) {
+    transform: scaleX(1.1) scaleY(1) scaleZ(1.2) rotateX(-1deg) rotateY(86deg)
+      rotateZ(-100deg) translateX(-180px) translateY(30px) translateZ(-35px)
+      skewX(0deg) skewY(0deg);
+  }
+  @media (max-width: 1155px) {
+    transform: scaleX(1.1) scaleY(1) scaleZ(1.2) rotateX(-1deg) rotateY(86deg)
+      rotateZ(-100deg) translateX(-180px) translateY(30px) translateZ(-40px)
+      skewX(0deg) skewY(0deg);
+  }
+  @media (max-width: 1075px) {
+    transform: scaleX(1.1) scaleY(1) scaleZ(1.2) rotateX(-1deg) rotateY(86deg)
+      rotateZ(-100deg) translateX(-180px) translateY(30px) translateZ(-45px)
+      skewX(0deg) skewY(0deg);
+  }
+  @media (max-width: 960px) {
+    transform: scaleX(1.1) scaleY(1) scaleZ(1.2) rotateX(-1deg) rotateY(86deg)
+      rotateZ(-100deg) translateX(-180px) translateY(30px) translateZ(-50px)
+      skewX(0deg) skewY(0deg);
+  }
+  @media (max-width: 655px) {
+    transform: scaleX(1.1) scaleY(1) scaleZ(1.2) rotateX(-1deg) rotateY(86deg)
+      rotateZ(-100deg) translateX(-180px) translateY(30px) translateZ(-60px)
+      skewX(0deg) skewY(0deg);
+  }
+  @media (max-width: 477px) {
+    transform: scaleX(1.1) scaleY(1) scaleZ(1.2) rotateX(-1deg) rotateY(86deg)
+      rotateZ(-100deg) translateX(-180px) translateY(30px) translateZ(-62px)
+      skewX(0deg) skewY(0deg);
+  }
+  @media (max-width: 360px) {
+    transform: scaleX(1.1) scaleY(1) scaleZ(1.2) rotateX(-1deg) rotateY(86deg)
+      rotateZ(-100deg) translateX(-180px) translateY(30px) translateZ(-70px)
+      skewX(0deg) skewY(0deg);
+  }
+}
+
+$width: 100px;
+.face {
+  width: $width;
+  height: $width;
+
+  position: absolute;
+
+  font-size: 2rem;
+}
+
+$halfwidth: calc($width / 2);
+
+$color-1: rgb(228, 183, 35);
+$color-2: rgb(104, 89, 5);
+
+.front {
+  // hole side
+  background: linear-gradient(90deg, $color-2 0 65%, $color-1 95%);
+  transform: translateZ(50px);
+  mask: url(cover-side.svg);
+  clip-path: polygon(100% 100%, 0% 0%, 100% 0%);
+}
+
+.back {
+  transform: translateZ(-50px) rotateY(180deg);
+}
+
+.left {
+  //current bottom
+  transform: translateX(-50px) rotateY(-90deg);
+}
+
+.right {
+  //current front
+  background: linear-gradient(
+    240deg,
+    rgb(216, 196, 49) 0 65%,
+    rgb(204, 165, 38) 95%
+  );
+  transform: translateX(50px) rotateY(90deg);
+  box-sizing: border-box;
+}
+.top {
+  //current top
+  background: linear-gradient(
+    102deg,
+    rgb(100, 89, 22) 40%,
+    rgb(148, 129, 23) 55%,
+    rgb(216, 197, 54) 90%
+  );
+  transform: translateY(-50px) rotateX(90deg);
+  box-sizing: border-box;
+}
+
+.bottom-cube {
+  transform: translateY(50px) rotateX(-90deg);
+}
