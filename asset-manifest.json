@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nba-app/static/css/main.df07ac97.css",
-    "main.js": "/nba-app/static/js/main.0b4d7584.js",
+    "main.js": "/nba-app/static/js/main.994e1bc8.js",
     "static/js/27.80ec1f0b.chunk.js": "/nba-app/static/js/27.80ec1f0b.chunk.js",
     "static/media/simple-bg.png": "/nba-app/static/media/simple-bg.410b06241d2c88cdec68.png",
     "static/media/nba-site.PNG": "/nba-app/static/media/nba-site.8a28e465f8d4d22440c9.PNG",
@@ -19,6 +19,6 @@
   },
   "entrypoints": [
     "static/css/main.df07ac97.css",
-    "static/js/main.0b4d7584.js"
+    "static/js/main.994e1bc8.js"
   ]
 }
