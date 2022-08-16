@@ -1,13 +1,13 @@
-#########################################################<br>
+<br>
 See The App Live :<a target="_blank" href="https://a-liljeroos.github.io/nba-app/">HERE</a>.<br>
-#########################################################<br>
+<br>
 <br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
 <br>
 ! Later turned into [Typescript](https://www.typescriptlang.org/).\
 <br>
 
-╔════╗╔════╗╔════╗╔════╗
+
 \
 HOW IT WORKS??\
 \
@@ -40,4 +40,4 @@ FEATURES:
 </li>
 </ul>
 
-╚════╝╚════╝╚════╝╚════╝
+
